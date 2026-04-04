@@ -21,7 +21,7 @@ WORKDIR /opt/
 COPY --from=builder /opt/anisette-v3-server /opt/anisette-v3-server
 
 # Create default provisioning folder
-RUN mkdir -p mkdir -p /opt/anisette-v3/provisioning
+RUN mkdir -p /opt/anisette-v3/provisioning
 
 # Setup rootless user which works with the volume mount
 RUN useradd -ms /bin/bash Alcoholic \
